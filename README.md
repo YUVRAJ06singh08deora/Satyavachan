@@ -1,6 +1,6 @@
 # Blockchain-based FIR Lodging
 ## 📄 Abstract
-Blockchain has the ability to keep an incorruptible, decentralized, and transparent log of all FIR data makes it a technology rife for security applications. Additionally, while blockchain is transparent it is also private, concealing the identity of any individual with complex and secure codes that can protect the sensitivity of medical data. The decentralized nature of the technology also allows Police Administration and people to share the same information quickly and safely.
+Blockchain has the ability to keep an incorruptible, decentralized, and transparent log of all FIR data makes it a technology rife for security applications. Additionally, while blockchain is transparent it is also private, concealing the identity of any individual with complex and secure codes that can protect the sensitivity of Fir data. The decentralized nature of the technology also allows Police Administration and people to share the same information quickly and safely.
 
 ## 🗒️ Introduction
 This project effectively stores the FIR data on the blockchain network nowadays we see many police personnel doing some fraud with the databases containing FIR's and manipulating it for their own good and sometimes the FIR reports are even modified when someone gives bribes to the Police staff so that they can modify the previously existing data so to keep all the data secure and transparent we have created a whole Fir lodging management system on the blockchain network where it can be kept safe and it cannot be manipulated.
