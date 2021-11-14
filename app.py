@@ -1,8 +1,8 @@
 import streamlit as st
 from pytezos import pytezos
 
-pytezos = pytezos.using(shell = 'https://florencenet.smartpy.io', key='edskRxw1a6qfy3w3dsFyueoW9E6T1B5fqCVMfyTBGsGWPu1c7tukkM4s1gAoueebMy1HZA2jvSG8shtvQCaGEuDe3FgXH51LMu')
-contract = pytezos.contract('KT1HMTy2NDtdZiDPeDtn4axbcjX8UZyMDpbK')
+pytezos = pytezos.using(shell = 'https://granadanet.smartpy.io', key='edskRn4MXH7DD9M9QiAKhKRNLCp4LU11iqEcNp6vSqNWB8qksLZckKgQZozdVuX4wum61fNwaesWjgtydm8f3h6NYggFAtPx4f')
+contract = pytezos.contract('KT1MwqWbTptLhExqp2EitWxWKrs2WuktHn8H')
 
 def welcome():
     return "Welcome To Decentralised FIR lodging system"
@@ -32,15 +32,15 @@ def addFIR():
 
 
   if st.button("Register FIR"):
-    a = pytezos.using(shell = 'https://florencenet.smartpy.io', key='edskRxw1a6qfy3w3dsFyueoW9E6T1B5fqCVMfyTBGsGWPu1c7tukkM4s1gAoueebMy1HZA2jvSG8shtvQCaGEuDe3FgXH51LMu')
-    contract = a.contract('KT1HMTy2NDtdZiDPeDtn4axbcjX8UZyMDpbK')
+    a = pytezos.using(shell = 'https://granadanet.smartpy.io', key='edskRn4MXH7DD9M9QiAKhKRNLCp4LU11iqEcNp6vSqNWB8qksLZckKgQZozdVuX4wum61fNwaesWjgtydm8f3h6NYggFAtPx4f')
+    contract = a.contract('KT1MwqWbTptLhExqp2EitWxWKrs2WuktHn8H')
 
     contract.addFir(Complaint=Complaint,DisPs=DisPs,Dirps=Dirps,Dow=Dow,Date1=Date1,Doa=Doa,pop=pop,time=time,NoO=NoO,Section=Section,age = age, gender = gender, name = name,fathersName=fathersName, PhoneNumber = PhoneNumber,address=address, uid = uid).with_amount(0).as_transaction().fill().sign().inject()   
 
 def ViewFirData():
   uid = st.text_input("Enter Unique aadhar Id")
   if st.button("View Records"):
-    usds = pytezos.using(shell = 'https://florencenet.smartpy.io').contract('KT1HMTy2NDtdZiDPeDtn4axbcjX8UZyMDpbK')
+    usds = pytezos.using(shell = 'https://granadanet.smartpy.io').contract('KT1MwqWbTptLhExqp2EitWxWKrs2WuktHn8H')
     st.text("Name: "+ usds.storage[uid]['name']()) 
     st.text("Father's Name:"+usds.storage[uid]['fathersName']())
     st.text("Phone Number: "+str(usds.storage[uid]['PhoneNumber']()))
