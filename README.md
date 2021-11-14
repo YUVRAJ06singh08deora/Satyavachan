@@ -21,7 +21,7 @@ The block diagram above represents the correct working of the model in that firs
 📍 Open the source code from the link given below <br>
 And copy and make a new project on google collaboratory.
 
-💫Link of google collab -: https://colab.research.google.com/drive/1NC-73SauBntKTaYGf-klAk3s7CrBkJBv?usp=sharing<br>
+💫Link of google collab -: https://github.com/YUVRAJ06singh08deora/Blockchain_based_FIR_lodging/blob/main/DecentralizedFir.ipynb<br>
 
 📍 Upload the app.py file which you downloaded from the GitHub.<br>
 📍 Go to Runtime  and then select Run all over there.<br>
